@@ -19,8 +19,8 @@ const ImageGenerator = () => {
         }
 
         try {
-            setLoading(true )
-            const response = await axios.post("http://localhost:5000/api/generate-image", {
+            setLoading(true)
+            const response = await axios.post("https://ai-image-generator-obq2.vercel.app/api/generate-image", {
                 prompt: inputRef.current.value,
             });
             console.log(response)
